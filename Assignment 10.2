@@ -13,6 +13,5 @@ for line in handle:
         hours = words[5].split(':')
         hour = hours[0]
         counts[hour] = counts.get(hour, 0)+1
-s = sorted([(k,v) for k,v in counts.items()])
-for a,b in s:
-    print(a,b)
+for k,v in sorted(counts.items()):
+    print(k,v)
